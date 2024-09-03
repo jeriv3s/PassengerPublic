@@ -3,7 +3,7 @@
 
 int main() {
     // Creating a passenger object
-    Passenger passenger("Jesus Raul", "Erives", "12A", "NX2017", "Private Jet Access");
+    Passenger passenger("Jesus Raul", "Erives Robles", "12A", "NX2017", "Private Jet Access");
 
     // Use the public methods to interact with the object
     //Also prints out basic information here 
@@ -13,6 +13,12 @@ int main() {
     std::cout << "Flight Number: " << passenger.getFlightNumber() << std::endl;
     std::cout << "Seat Number: " << passenger.getSeatNumber() << std::endl;
     std::cout << "--------------------------------------------" << std::endl;
+
+    //Rest of detailed information printed here
+    std::cout << "More info " << std::endl;
+    std::cout << "--------------------------------------------" << std::endl;
+    std::cout << "Last Name: " << passenger.getLastName() << std::endl;
+    std::cout << "Class Service: " << passenger.getClassService() << std::endl;
 
 
 
