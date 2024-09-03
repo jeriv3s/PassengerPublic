@@ -13,9 +13,12 @@ private:
     std::string classService;
 
 public:
-    // Constructor
+    // Constructor with initializer list
     Passenger(std::string firstName, std::string lastName, std::string seatNumber, std::string flightNumber, std::string classService)
         : firstName(firstName), lastName(lastName), seatNumber(seatNumber), flightNumber(flightNumber), classService(classService) {}
+
+    // The colon (:) after the constructor name is used to directly set up the member variables (like firstName, lastName, etc.)
+    // with the values passed to the constructor. This is a faster way to initialize them.
 
     // Getter for firstName
     std::string getFirstName() const {
@@ -25,6 +28,10 @@ public:
     // Setter for firstName
     void setFirstName(const std::string &firstName) {
         this->firstName = firstName;
+
+    // 'this' is a special pointer that points to the object that is calling the function.
+    // 'this->firstName' refers to the object's member variable 'firstName'.
+    // It helps to distinguish between the member variable and the parameter with the same name.
     }
 
     // Getter for lastName
@@ -69,3 +76,5 @@ public:
 };
 
 #endif // PASSENGER_H
+// '#endif' ends the conditional started by '#ifndef'.
+// This ensures the header file is included only once, preventing errors from multiple inclusions.
