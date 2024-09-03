@@ -2,15 +2,20 @@
 #include "Passenger.h"
 
 int main() {
-    // Create a Passenger object
-    Passenger passenger("John", "Doe", "12A", "AB123", "Economy");
+    // Creating a passenger object
+    Passenger passenger("Jesus Raul", "Erives", "12A", "NX2017", "Private Jet Access");
 
     // Use the public methods to interact with the object
-    std::cout << "First Name: " << passenger.getFirstName() << std::endl;
+    //Also prints out basic information here 
+    std::cout << "Your information at a glance " << std::endl;
+    std::cout << "--------------------------------------------" << std::endl;
+    std::cout << "Name: " << passenger.getFirstName() << std::endl;
+    std::cout << "Flight Number: " << passenger.getFlightNumber() << std::endl;
+    std::cout << "Seat Number: " << passenger.getSeatNumber() << std::endl;
+    std::cout << "--------------------------------------------" << std::endl;
 
-    // Change the first name using the setter
-    passenger.setFirstName("Jane");
-    std::cout << "Updated First Name: " << passenger.getFirstName() << std::endl;
+
+
 
     return 0;
 }
